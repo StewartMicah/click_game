@@ -1,13 +1,10 @@
 import React from "react";
 
-const Home = ({clickCurrency}) => {
+const Home = () => {
 
 
     return (
     <div>
-      <h1
-      onClick={clickCurrency}
-      >click me</h1>
     </div>
   );
 };

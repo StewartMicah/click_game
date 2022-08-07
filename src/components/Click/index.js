@@ -2,16 +2,17 @@ import React from "react";
 import { useSelector, useDispatch } from 'react-redux'
 import { incrementByAmount } from "../../features/currency/currencySlice";
 
-const CurrencyEl = () => {
+const ClickEl = () => {
     const click = useSelector(state => state.click.value)
-    const currency = useSelector(state => state.currency.value)
     const dispatch = useDispatch()
     console.log(click);
   return (
     <div>
-      <div>{currency.toFixed(2)}</div>
+      <h1
+      onClick={() => dispatch(incrementByAmount(click))}
+      >click 4 cash</h1>
     </div>
   );
 };
 
-export default CurrencyEl;
+export default ClickEl;

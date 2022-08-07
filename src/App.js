@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Nav from "./components/Nav";
-import Home from "./Pages/Home";
+import shopEl from "./components/shop";
 import "./App.css";
 
 
 
-  const clickCurrency = (clickAmount = 4) => {
-    setCurrency(currency + clickAmount);
-  };
 
 function App() {
   
@@ -18,8 +15,8 @@ function App() {
     <Router>
       <div>
         <Nav />
+        <shopEl />
         <Routes>
-          <Route path="/" element={<Home clickCurrency={clickCurrency}/>} />
         </Routes>
       </div>
     </Router>
