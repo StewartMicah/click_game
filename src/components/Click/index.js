@@ -5,7 +5,6 @@ import { incrementByAmount } from "../../features/currency/currencySlice";
 const ClickEl = () => {
     const click = useSelector(state => state.click.value)
     const dispatch = useDispatch()
-    console.log(click);
   return (
     <div>
       <h1

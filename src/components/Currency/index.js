@@ -6,7 +6,6 @@ const CurrencyEl = () => {
     const click = useSelector(state => state.click.value)
     const currency = useSelector(state => state.currency.value)
     const dispatch = useDispatch()
-    console.log(click);
   return (
     <div>
       <div>{currency.toFixed(2)}</div>
